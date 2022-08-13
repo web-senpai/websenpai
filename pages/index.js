@@ -119,14 +119,8 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Gaming
-          </Link>
-          , Watching Movies/Series,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Anime
-          </Link>
+          Art, Music,Gaming
+          , Watching Movies/Series,{' '} Anime 
           , Programming, Machine Learning
         </Paragraph>
       </Section>
