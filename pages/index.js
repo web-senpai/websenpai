@@ -119,9 +119,9 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,Gaming
-          , Watching Movies/Series,{' '} Anime 
-          , Programming, Machine Learning
+          Art, Music, Gaming
+          , Watching Movies and TV Series ,{' '} Anime 
+          , Programming,{' '} Machine Learning.
         </Paragraph>
       </Section>
 
