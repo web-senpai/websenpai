@@ -6,6 +6,7 @@ import {
   Box,
   SimpleGrid,
   Button,
+  Badge,
   List,
   ListItem,
   useColorModeValue,
@@ -17,7 +18,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoGithub,IoLogoLinkedin,IoLogoWebComponent ,IoLogoFacebook} from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoWebComponent, IoLogoFacebook } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import Image from 'next/image'
 
@@ -82,7 +83,7 @@ const Home = () => (
           passion for Learning new technologies everyday. He has a knack
           for all things building softwares, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
-          watching movies,web series,animes. 
+          watching movies,web series,animes.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -105,13 +106,13 @@ const Home = () => (
           <BioYear>2022</BioYear>
           Completed the Bachelor&apos;s Program in the Graduate School of
           Computer Science and Engineering at Ahsanullah University Of Science And Technology.
-      
+
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Worked at Enosis Solutions! Dhaka 
+          Started working as Software Engineer at Enosis Solutions,Dhaka.
         </BioSection>
-       
+
       </Section>
 
       <Section delay={0.3}>
@@ -119,10 +120,73 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music, Gaming
-          , Watching Movies and TV Series ,{' '} Anime 
-          , Programming,{' '} Machine Learning.
+          Art, Music,Gaming
+          , Watching Movies/Series,{' '} Anime
+          , Programming, Machine Learning
         </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+
+        <List ml={4} my={4}>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Frontend
+            </Badge>
+            <span>Angular, React, Vue.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              UI/UX
+            </Badge>
+            <span>Html, CSS, Bootstrap, Tailwind CSS, Chakra UI.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Backend
+            </Badge>
+            <span>Django, Dot Net, Php, ExpressJs.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Database
+            </Badge>
+            <span>Mongodb, Mysql, MS SQL Server, SQLite, Firebase.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Package Managers
+            </Badge>
+            <span>NPM, Yarn.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Version Control
+            </Badge>
+            <span>Git, Github, GitLab, BitBucket.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Testing
+            </Badge>
+            <span>Postman, Insomnia, Jira.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Runtimes
+            </Badge>
+            <span>Nodejs, Deno, Bun.</span>
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="green" mr={2}>
+              Programming Languages
+            </Badge>
+            <span>C, C++, C#, Java, Javascript, Typescript, Python, Php.</span>
+          </ListItem>
+        </List>
       </Section>
 
       <Section delay={0.3}>
@@ -186,7 +250,7 @@ const Home = () => (
           </GridItem>
         </SimpleGrid>
 
-   
+
       </Section>
     </Container>
   </Layout>
