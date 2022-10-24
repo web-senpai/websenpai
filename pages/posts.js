@@ -21,22 +21,22 @@ const Posts = () => (
           <GridItem
             title="Introduction to VS Code Tricky-Tricks for absolute beginners"
             thumbnail={vscode}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
+            href="https://latenightwithsam.vercel.app/post/vscode-tricks"
           />
           <GridItem
-            title="React in bits and pieces for absolute beginners"
+            title="React and firebase authentication"
             thumbnail={react}
-            href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+            href="https://latenightwithsam.vercel.app/post/react-firebase-api"
           />
           <GridItem
             title="Redux in bits and pieces for absolute beginners"
             thumbnail={redux}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
+            href="https://latenightwithsam.vercel.app/post/redux-basics"
           />
           <GridItem
             title="ORM[Sequelize] in bits and pieces for absolute beginners"
             thumbnail={sequelize}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
+            href="https://latenightwithsam.vercel.app/post/sequelize-orm-rest-api"
           />
         </SimpleGrid>
       </Section>
