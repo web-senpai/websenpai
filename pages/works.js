@@ -118,7 +118,7 @@ const Works = () => (
         </Section>
 
         <Section delay={0.5}>
-          <WorkGridItem id="shadowhuter" thumbnail={shadowhunter} title="ShadowHunter">
+          <WorkGridItem id="shadowhunter" thumbnail={shadowhunter} title="ShadowHunter">
            A mini 2D puzzle based adventure game about a lost boy unraveling the mysteries of his life.
           </WorkGridItem>
         </Section>
