@@ -17,7 +17,7 @@ import {
         </Title>
         
         <P>
-          Reportbyte is a simple business analyst system which can convert natural language questions into sql using a tool called Querybot which uses google's tapas model.
+          Reportbyte is a simple business analyst system which can convert natural language questions into sql using a tool called Querybot which uses tapas model.
           It can answer questions like sales representatives ans provide customer support using a tool called Shopbot which uses tapas AI conversation model. 
         </P>
       

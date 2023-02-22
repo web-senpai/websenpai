@@ -10,7 +10,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  ListIcon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -18,7 +19,8 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoWebComponent, IoLogoFacebook } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoWebComponent, IoLogoFacebook,IoLogoYoutube, IoLogoReact, IoLogoVue, IoLogoAngular, IoGlobeOutline } from 'react-icons/io5'
+import {HiOutlineDatabase, HiOutlineDesktopComputer, HiOutlineDeviceMobile, HiOutlineFire, HiOutlineLibrary, HiOutlineLightningBolt, HiOutlinePresentationChartBar, HiOutlineSwitchVertical, HiOutlineTable} from 'react-icons/hi'
 import thumbYouTube from '../public/images/links/youtube.png'
 import Image from 'next/image'
 
@@ -26,6 +28,7 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
+const Iconstyle = {display: 'inline-block', verticalAlign: 'middle'};
 const Home = () => (
   <Layout>
     <Container>
@@ -37,7 +40,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an software Engineer based in Bangladesh!
+        Hello, I&apos;m a Software Engineer & System Architect.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -75,19 +78,18 @@ const Home = () => (
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Work
+        <Heading as="h3" variant="section-title" _hover={{ textDecorationColor: useColorModeValue("purple.300", "pink") }}>
+          About Me ❤ 
         </Heading>
         <Paragraph>
-          Samir is a full-stack developer based in Dhaka with a
-          passion for Learning new technologies everyday. He has a knack
-          for all things building softwares, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          watching movies,web series,animes.
+          I am , MD. Samir Uddin Shuvo , I like to build and design softwares ranging from web sites
+          to mobile applications. I try to keep myself updated with latest technologies and tools.
+          In my personal time I either watch movies, animes, web series or build some pet projects with
+          new tech-stacks.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme={useColorModeValue("purple", "pink")}>
               My portfolio
             </Button>
           </NextLink>
@@ -95,8 +97,8 @@ const Home = () => (
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
+        <Heading as="h3" variant="section-title"  _hover={{ textDecorationColor: useColorModeValue("purple.300", "pink") }}>
+          TimeLine 📅 
         </Heading>
         <BioSection>
           <BioYear>1998</BioYear>
@@ -116,72 +118,91 @@ const Home = () => (
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art, Music,Gaming
-          , Watching Movies/Series,{' '} Anime
-          , Programming, Machine Learning
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Skills
+        <Heading as="h3" variant="section-title"  _hover={{ textDecorationColor: useColorModeValue("purple.300", "pink") }}>
+          Skills 🏅 
         </Heading>
 
         <List ml={4} my={4}>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+            <ListIcon as={IoLogoWebComponent}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Frontend
             </Badge>
-            <span>Angular, React, Vue.</span>
+       <span> <IoLogoReact  style={Iconstyle}/> React, <IoLogoVue style={Iconstyle}/> Vue, <IoLogoAngular  style={Iconstyle}/> Angular, Next, Astro.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
-              UI/UX
+          <ListIcon as={IoGlobeOutline}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
+              Web UI/UX
             </Badge>
-            <span>Html, CSS, Bootstrap, Tailwind CSS, Chakra UI.</span>
+            <span>Html, CSS, Bootstrap, Tailwind CSS, Chakra UI, Daisy UI.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+          <ListIcon as={HiOutlineDeviceMobile}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
+              Mobile
+            </Badge>
+            <span>React Native, Flutter.</span>
+          </ListItem>
+          <ListItem>
+          <ListIcon as={HiOutlineDeviceMobile}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
+              Mobile UI/UX
+            </Badge>
+            <span>React Native Paper, React Native Elements, UI Kitten.</span>
+          </ListItem>
+          <ListItem>
+          <ListIcon as={HiOutlineDesktopComputer}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Backend
             </Badge>
-            <span>Django, Dot Net, Php, ExpressJs.</span>
+            <span>ExpressJs, Django, Dot Net, Php, .</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+          <ListIcon as={HiOutlineDatabase}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Database
             </Badge>
             <span>Mongodb, Mysql, MS SQL Server, SQLite, Firebase.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+          <ListIcon as={HiOutlineFire}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Package Managers
             </Badge>
-            <span>NPM, Yarn.</span>
+            <span>Npm, Pnpm, Yarn.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+          <ListIcon as={HiOutlineSwitchVertical}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Version Control
             </Badge>
             <span>Git, Github, GitLab, BitBucket.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
-              Testing
+          <ListIcon as={HiOutlinePresentationChartBar}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
+              Testing & Monitoring
             </Badge>
-            <span>Postman, Insomnia, Jira.</span>
+            <span>Postman, Insomnia, Flipper ,PM2.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+          <ListIcon as={HiOutlineTable}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
+              Project  Management
+            </Badge>
+            <span>Jira, Trello.</span>
+          </ListItem>
+          <ListItem>
+          <ListIcon as={HiOutlineLightningBolt}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Runtimes
             </Badge>
             <span>Nodejs, Deno, Bun.</span>
           </ListItem>
           <ListItem>
-            <Badge colorScheme="green" mr={2}>
+          <ListIcon as={HiOutlineLibrary}/>
+            <Badge colorScheme={useColorModeValue("green", "pink")} mr={2}>
               Programming Languages
             </Badge>
             <span>C, C++, C#, Java, Javascript, Typescript, Python, Php.</span>
@@ -190,15 +211,15 @@ const Home = () => (
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
+        <Heading as="h3" variant="section-title" _hover={{ textDecorationColor: useColorModeValue("purple.300", "pink") }}>
+          FootPrints 🕸️
         </Heading>
         <List>
           <ListItem>
             <Link href="https://github.com/Eziosam" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue("purple", "pink")}
                 leftIcon={<IoLogoGithub />}
               >
                 @eziosam
@@ -209,7 +230,7 @@ const Home = () => (
             <Link href="https://www.linkedin.com/in/samirshuvo/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue("purple", "pink")}
                 leftIcon={<IoLogoLinkedin />}
               >
                 @samirshuvo
@@ -220,7 +241,7 @@ const Home = () => (
             <Link href="https://www.facebook.com/profile.php?id=100069216224600" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue("purple", "pink")}
                 leftIcon={<IoLogoFacebook />}
               >
                 @samir
@@ -231,26 +252,34 @@ const Home = () => (
             <Link href="https://dextersamir.github.io/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue("purple", "pink")}
                 leftIcon={<IoLogoWebComponent />}
               >
                 @portfolio
               </Button>
             </Link>
           </ListItem>
+          <ListItem>
+            <Link href="https://www.youtube.com/channel/UCs23AbDDcsUEh1FdHM6mbsw" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme={useColorModeValue("purple", "pink")}
+                leftIcon={<IoLogoYoutube />}
+              >
+                @youtube
+              </Button>
+            </Link>
+          </ListItem>
         </List>
+      </Section>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/channel/UCs23AbDDcsUEh1FdHM6mbsw"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            Web Senpai
-          </GridItem>
-        </SimpleGrid>
-
-
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title"  _hover={{ textDecorationColor: useColorModeValue("purple.300", "pink") }}>
+          I 💘
+        </Heading>
+        <Paragraph>
+          Software development , Web Development, Mobile applications
+        </Paragraph>
       </Section>
     </Container>
   </Layout>
