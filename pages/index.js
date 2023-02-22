@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   Badge,
   List,
@@ -18,10 +17,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoWebComponent, IoLogoFacebook,IoLogoYoutube, IoLogoReact, IoLogoVue, IoLogoAngular, IoGlobeOutline } from 'react-icons/io5'
 import {HiOutlineDatabase, HiOutlineDesktopComputer, HiOutlineDeviceMobile, HiOutlineFire, HiOutlineLibrary, HiOutlineLightningBolt, HiOutlinePresentationChartBar, HiOutlineSwitchVertical, HiOutlineTable} from 'react-icons/hi'
-import thumbYouTube from '../public/images/links/youtube.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
