@@ -257,7 +257,7 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.youtube.com/channel/UCs23AbDDcsUEh1FdHM6mbsw" target="_blank">
+            <Link href="https://www.youtube.com/@eziosam6838" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme={useColorModeValue("purple", "pink")}
