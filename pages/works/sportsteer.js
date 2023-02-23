@@ -21,9 +21,9 @@ const Work = () => (
        A database Management system for sports club tomanage players,performance statistics and financial stats.
     </P>
     <P>
-    This database management system is specifically designed for sports clubs, providing a comprehensive solution for managing players, performance statistics, and financial data. With this system, sports clubs can easily keep track of their players' profiles, including personal information, contracts, and performance statistics such as goals, assists, and playing time.
+    This database management system is specifically designed for sports clubs, providing a comprehensive solution for managing players, performance statistics, and financial data. With this system, sports clubs can easily keep track of their players&apos profiles, including personal information, contracts, and performance statistics such as goals, assists, and playing time.
     </P>
-    In addition, the system provides a platform for tracking the club's financial data, including revenue, expenses, and budgeting. This allows sports club managers to make informed decisions and plan for future growth.
+    In addition, the system provides a platform for tracking the club&aposs financial data, including revenue, expenses, and budgeting. This allows sports club managers to make informed decisions and plan for future growth.
     <P>
     The system offers an intuitive user interface and is easily customizable to fit the needs of individual sports clubs. It can be accessed securely from anywhere with an internet connection, allowing multiple users to collaborate and share information in real-time.
     </P>

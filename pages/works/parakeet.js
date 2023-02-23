@@ -29,7 +29,7 @@ const Work = () => (
 
     <P>
     This e-commerce site provides a secure and seamless shopping experience, with multiple payment options and fast shipping. 
-    It is an ideal destination for pet owners looking for high-quality products for their furry friends, with a wide range of options to suit every pet's needs and preferences.
+    It is an ideal destination for pet owners looking for high-quality products for their furry friends, with a wide range of options to suit every pet&aposs needs and preferences.
     </P>
   
     <List ml={4} my={4}>
