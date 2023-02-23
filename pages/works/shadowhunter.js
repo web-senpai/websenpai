@@ -29,7 +29,7 @@ import {
   
         <AspectRatio maxW="640px" ratio={1.7} my={4}>
           <iframe
-            src="https://www.youtube.com/embed/72PpcFmfEYs"
+            src="https://www.youtube.com/embed/XqOXvkxzUy0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

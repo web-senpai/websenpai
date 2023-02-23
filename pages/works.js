@@ -70,7 +70,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1,2]} gap={6}>
       <Section delay={0.3}>
           <WorkGridItem id="sportsteer" thumbnail={sportsteer} title="SportSteer">
-            A database Management system for sports club tomanage players,performance statistics and financial stats.
+            A database Management system for sports club to manage players,performance statistics and financial stats.
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
@@ -95,7 +95,7 @@ const Works = () => (
       <SimpleGrid columns={[1,1,2]} gap={6}>
         <Section delay={0.5}>
           <WorkGridItem id="admitto" thumbnail={admitto} title="Admitto">
-            An android app for students regarding undergraduateuniversity admission related information.
+            An android app for students regarding undergraduate university admission related information.
           </WorkGridItem>
         </Section>
       
@@ -113,7 +113,7 @@ const Works = () => (
       <SimpleGrid columns={[1,1,2]} gap={6}>
         <Section delay={0.5}>
           <WorkGridItem id="shopbot" thumbnail={shopbot} title="Shopbot">
-           A conversational chatbot for e-commerce sites and digitalmarketing based businesses.
+           A conversational chatbot for e-commerce sites and digital marketing based businesses.
           </WorkGridItem>
         </Section>
 

@@ -13,35 +13,33 @@ const Posts = () => (
   <Layout title="Posts">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Useful Knowledges
+        InfoBytes
       </Heading>
 
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="Introduction to VS Code Tricky-Tricks for absolute beginners"
+            title="Mastering VS Code: Sneaky Tips and Tricks for Beginner Coders"
             thumbnail={vscode}
             href="https://latenightwithsam.vercel.app/post/vscode-tricks"
           />
           <GridItem
-            title="React and firebase authentication"
+            title="Unlocking the Power of React and Firebase: A Guide to Secure Authentication"
             thumbnail={react}
             href="https://latenightwithsam.vercel.app/post/react-firebase-api"
           />
           <GridItem
-            title="Redux in bits and pieces for absolute beginners"
+            title="Modernizing Redux: The Bits and Pieces You Need for Beginner-Friendly Development"
             thumbnail={redux}
             href="https://latenightwithsam.vercel.app/post/redux-basics"
           />
           <GridItem
-            title="ORM[Sequelize] in bits and pieces for absolute beginners"
+            title="Decoding Sequelize: An In-Depth Exploration of ORMs for Beginner Developers"
             thumbnail={sequelize}
             href="https://latenightwithsam.vercel.app/post/sequelize-orm-rest-api"
           />
         </SimpleGrid>
       </Section>
-
- 
     </Container>
   </Layout>
 )

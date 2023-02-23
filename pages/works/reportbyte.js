@@ -17,14 +17,13 @@ import {
         </Title>
         
         <P>
-          Reportbyte is a simple business analyst system which can convert natural language questions into sql using a tool called Querybot which uses tapas model.
-          It can answer questions like sales representatives ans provide customer support using a tool called Shopbot which uses tapas AI conversation model. 
+        eportbyte is an uncomplicated business analysis system that employs a tool known as Querybot, which utilizes the tapas model, to convert natural language inquiries into SQL. This allows it to provide answers to questions, such as those posed by sales representatives. Additionally, Reportbyte can offer customer support through the use of a tool called Shopbot, which employs the Rasa AI conversation model. 
         </P>
       
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Frontend</Meta>
-            <span>React , Vue</span>
+            <span>React, Vue</span>
           </ListItem>
           <ListItem>
             <Meta>Backend</Meta>
@@ -34,6 +33,11 @@ import {
             <Meta>Database</Meta>
             <span>Mongodb</span>
           </ListItem>
+          <ListItem>
+            <Meta>AI Models</Meta>
+            <span>Rasa, Tapas</span>
+          </ListItem>
+
         
         </List>
   

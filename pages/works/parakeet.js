@@ -17,7 +17,19 @@ const Work = () => (
     </Title>
     
     <P>
-      An E-commerce site built for selling and buying pet foods and accessories.
+     This e-commerce site is designed specifically for the selling and buying of pet foods and accessories.
+     Pet owners can browse a wide variety of products, including food, toys, leashes, and grooming supplies, and 
+     purchase them online from the comfort of their own home.
+    </P>
+
+    <P>
+    The site features detailed product descriptions, photos, and customer reviews to help users make informed purchasing decisions. 
+    It also offers convenient features such as easy search filters, wishlists, and shopping carts.
+    </P>
+
+    <P>
+    This e-commerce site provides a secure and seamless shopping experience, with multiple payment options and fast shipping. 
+    It is an ideal destination for pet owners looking for high-quality products for their furry friends, with a wide range of options to suit every pet's needs and preferences.
     </P>
   
     <List ml={4} my={4}>
@@ -31,7 +43,7 @@ const Work = () => (
       </ListItem>
       <ListItem>
         <Meta>Database</Meta>
-        <span>MySQL</span>
+        <span>MS SQL</span>
       </ListItem>
     
     </List>
