@@ -111,6 +111,10 @@ const Home = () => (
           <BioYear>2022</BioYear>
           Started working as Software Engineer at Enosis Solutions,Dhaka.
         </BioSection>
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Started working as Senior Software Engineer at Enosis Solutions,Dhaka.
+        </BioSection>
 
       </Section>
 
